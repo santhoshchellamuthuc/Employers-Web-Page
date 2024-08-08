@@ -1,0 +1,45 @@
+﻿@model WebLibrary.Webentity
+
+@{
+    ViewData["Title"] = "Insert";
+}
+
+<h1>Insert</h1>
+
+<h4>Webentity</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Insert">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="brithdate" class="control-label"></label>
+                <input asp-for="brithdate" class="form-control" />
+                <span asp-validation-for="brithdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="experience" class="control-label"></label>
+                <input asp-for="experience" class="form-control" />
+                <span asp-validation-for="experience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="exceptedsalary" class="control-label"></label>
+                <input asp-for="exceptedsalary" class="form-control" />
+                <span asp-validation-for="exceptedsalary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
